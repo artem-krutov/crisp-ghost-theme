@@ -1,6 +1,5 @@
 .post_beginning {
-  /*font-family: monospace;*/
-  width: 300ch;
-  overflow: hidden;
-  white-space: nowrap;
+    height: 60px;
+    line-height: 20px;
+    overflow: hidden;
 }

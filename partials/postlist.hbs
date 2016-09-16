@@ -1,11 +1,11 @@
 {{#foreach posts}}
 <section id="{{id}}" class="{{post_class}}">
-	<h3 class="post-title"><a href="{{url}}">{{title}}</a><span class="separator"> &middot; </span>{{date published_at format='DD/MM/YYYY'}}<span class="taglist">{{tags separator=" " prefix=" &middot; "}}</span>{{#if featured}}<span class="separator"> &middot; </span><i class="fa fa-star-o feature-star"></i>{{/if}}</h3>
+	<h2 class="post-title"><a href="{{url}}">{{title}}</a></h2><span class="separator"> &middot; </span><h5>{{date published_at format='DD/MM/YYYY'}}</h5><span class="taglist">{{tags separator=" " prefix=" &middot; "}}</span>{{#if featured}}<span class="separator"> &middot; </span><i class="fa fa-star-o feature-star"></i>{{/if}}
 	{{#if image}}
 		<img src="{{image}}" max-width="50%" max-height="50%"/>
 	{{/if}}
 	<section class="post-excerpt">
-      <p>{{excerpt words="150"}} &nbsp;&nbsp; <a class="read-more" href="{{url}}">Читать дальше ⟶</a></p>
+      <p>{{excerpt words="50"}} &nbsp;&nbsp; <a class="read-more" href="{{url}}">Читать дальше ⟶</a></p>
     </section>
 </section>
 {{/foreach}}

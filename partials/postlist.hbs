@@ -1,6 +1,6 @@
 {{#foreach posts}}
 <section id="{{id}}" class="{{post_class}}">
-	<p class="post-title"><a class="post-header" href="{{url}}#disqus_thread" data-disqus-identifier="{{id}}">{{title}}</a><span class="separator"> &middot; </span> <span>{{date published_at format='DD/MM/YYYY'}}</span><span class="taglist">{{tags separator=" " prefix=" &middot; "}}</span>{{#if featured}}<span class="separator"> &middot; </span><i class="fa fa-star-o feature-star"></i>{{/if}}</p>
+	<p class="post-title"><a class="post-header" href="{{url}}">{{title}}</a><span class="separator"> &middot; </span> <span>{{date published_at format='DD/MM/YYYY'}}</span><span class="taglist">{{tags separator=" " prefix=" &middot; "}}</span>{{#if featured}}<span class="separator"> &middot; </span><i class="fa fa-star-o feature-star"></i>{{/if}}<span class="disqus-comment-count" data-disqus-identifier="{{id}}">comments</span></p>
 	{{#if image}}
 		<img src="{{image}}" max-width="50%" max-height="50%"/>
 	{{/if}}

@@ -26,6 +26,7 @@
 			<![endif]-->  
 			{{{block "head"}}}  
 	    {{ghost_head}}
+	    <script id="dsq-count-scr" src="//EXAMPLE.disqus.com/count.js" async></script>
 	</head>
 	<body class="{{body_class}}">
 		<header id="header">
@@ -44,6 +45,8 @@
 	{{ghost_foot}}
 	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
-	<script id="dsq-count-scr" src="//EXAMPLE.disqus.com/count.js" async></script>
+	<script type="test/javascript">
+		DISQUSWIDGETS.getCount({reset: true});
+	</script>
 	</body>
 </html>

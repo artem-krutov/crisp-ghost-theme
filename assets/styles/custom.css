@@ -5,3 +5,8 @@
 .post-header {
 	font-size: 1.5em;
 }
+
+.post-padding {
+	padding-bottom: 1em;
+	border-bottom: 1px solid #D3D3D3;
+}

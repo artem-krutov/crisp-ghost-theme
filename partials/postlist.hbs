@@ -1,7 +1,7 @@
 {{#foreach posts}}
 <section id="{{id}}" class="{{post_class}}">
 	<p class="post-title"><a class="post-header" href="{{url}}">{{title}}</a><span class="separator"> &middot; </span> <span>{{date published_at format='DD/MM/YYYY'}}</span><span class="taglist">{{tags separator=" " prefix=" &middot; "}}</span>{{#if featured}}<span class="separator"> &middot; </span><i class="fa fa-star-o feature-star"></i>{{/if}}<br/></p>
-	h4 class="count-comments" data-disqus-url="{{url}}"></h4>
+	<span class="disqus-comment-count" data-disqus-identifier="{{id}}"></span>
 	{{#if image}}
 		<img src="{{image}}" max-width="50%" max-height="50%"/>
 	{{/if}}
@@ -10,29 +10,3 @@
     </section>
 </section>
 {{/foreach}}
-<script type="text/javascript">
-		$(document).ready(function () {
-                var disqusPublicKey = "YOUR_PUBLIC_KEY";
-                var disqusShortname = "YOUR_SHORTNAME";
-                var urlArray = [];
-                $('.count-comments').each(function () {
-                    var url = $(this).attr('data-disqus-url');
-                    urlArray.push('link:' + url);
-                });
-                $.ajax({
-                    type: 'GET',
-                    url: "https://disqus.com/api/3.0/threads/set.jsonp",
-                    data: { api_key: disqusPublicKey, forum : disqusShortname, thread : urlArray }, // URL method
-                    cache: false,
-                    dataType: "jsonp",
-                    success: function (result) {
-                        for (var i in result.response) {
-                            var countText = " comments";
-                            var count = result.response[i].posts;
-                            if (count == 1) countText = " comment";
-                            $('h4[data-disqus-url="' + result.response[i].link + '"]').html(count + countText);
-                        }
-                    }
-                });
-            });
-	</script>

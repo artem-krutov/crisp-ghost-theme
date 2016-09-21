@@ -5,11 +5,14 @@
 	<h1 class="post-title">{{title}}</h1>
 	{{content}}
 	<div>
-		<script type="text/javascript">
-			document.write(VK.Share.button());
-		</script>
-		<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text={{title}}:%20{{url absolute="true"}}">
-		Tweet</a>
+		<span>
+			<script type="text/javascript">
+				document.write(VK.Share.button());
+			</script>
+		</span>
+		<span>
+			<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text={{title}}">Tweet</a>
+		</span>
 	</div>
   {{> comments}}
 </article>  

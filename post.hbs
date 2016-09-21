@@ -4,15 +4,17 @@
 	<div class="post-stamp">{{date published_at format='DD/MM/YYYY'}}<span class="taglist">{{tags separator=" " prefix=" &middot; "}}</span>{{#if featured}}<span class="separator"> &middot; </span><i class="fa fa-star-o feature-star"></i>{{/if}}</div>
 	<h1 class="post-title">{{title}}</h1>
 	{{content}}
+	Понравилось? Поделись: 
 	<div>
-		<span>
+		<div class="sharing-link">
 			<script type="text/javascript">
 				document.write(VK.Share.button());
 			</script>
-		</span>
-		<span>
+		</div>
+		<span class="taglist"></span>
+		<div class="sharing-link">
 			<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text={{title}}">Tweet</a>
-		</span>
+		</div>
 	</div>
   {{> comments}}
 </article>  

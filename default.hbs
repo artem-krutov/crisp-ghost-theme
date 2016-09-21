@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">	
 	<head>
+		<script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
 	    {{! Document Settings }}
 	    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -53,6 +54,7 @@
 	  ga('create', 'UA-84560702-1', 'auto');
 	  ga('send', 'pageview');
 
+	  document.getElementById('vk_share_button').innerHTML = VK.Share.button('http://mysite.com', {type: 'link'}); 
 </script>
 	</body>
 </html>

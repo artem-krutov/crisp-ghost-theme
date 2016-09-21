@@ -4,7 +4,14 @@
 	<div class="post-stamp">{{date published_at format='DD/MM/YYYY'}}<span class="taglist">{{tags separator=" " prefix=" &middot; "}}</span>{{#if featured}}<span class="separator"> &middot; </span><i class="fa fa-star-o feature-star"></i>{{/if}}</div>
 	<h1 class="post-title">{{title}}</h1>
 	{{content}}
-	{{> share}}
   {{> comments}}
 </article>  
 {{/post}}
+
+<div>
+	<span id="vk_share_button"></span>
+</div>
+
+<script type="text/javascript">
+	document.getElementById('vk_share_button').innerHTML = VK.Share.button({{url absolute="true"}}, {type: 'link'}); 
+</script>

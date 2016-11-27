@@ -5,8 +5,8 @@
 <br/>
 
 <h4>Содержание</h4>
-{{#foreach posts}}
-<section id="{{id}}" class="{{post_class}}">
-	{{title}} 1
-</section>
-{{/foreach}}
+{{#get "posts" limit="all" include="url,title"}}
+	{{#foreach posts}}
+	  <h5><a href="{{url absolute='true'}}">{{title}}</a></h5>
+	{{/foreach}}
+{{/get}}

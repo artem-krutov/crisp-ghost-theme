@@ -25,7 +25,6 @@ header {
 	left: 0;
 	height:100%;
 	width:13.5em;
-	background-color: #000000;
 }
 #content {
 	display: block;
@@ -152,9 +151,6 @@ header #logo img {
 	font-size: 0.7em;
 	margin-top: -0.7em;
 	margin-bottom: 1.5em;
-}
-#follow-icons a {
-	color: #ccc;
 }	
 #follow-icons span {
 	vertical-align:top;

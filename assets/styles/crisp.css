@@ -25,7 +25,7 @@ header {
 	left: 0;
 	height:100%;
 	width:13.5em;
-	background-color: #000000;
+	background-color: #333333;
 }
 #content {
 	display: block;
@@ -142,10 +142,9 @@ header h1 a:hover {
 	text-decoration:none;
 }
 header #logo img {
-	height:9em;
-	border-radius:0.5em;
-	-moz-border-radius: 0.5em;
-	-webkit-border-radius: 0.5em;
+	border-radius:5.5em;
+	-moz-border-radius: 5.5em;
+	-webkit-border-radius: 5.5em;
 	border: none;
 }
 #follow-icons {

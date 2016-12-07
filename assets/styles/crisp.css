@@ -82,6 +82,7 @@ h6 {
 /* Page Elements */
 img, iframe {
 	max-width: 100%;
+	border: 2px solid;
 }
 a {
 	font-weight:700;
@@ -147,7 +148,7 @@ header #logo img {
 	border-radius:0.5em;
 	-moz-border-radius: 0.5em;
 	-webkit-border-radius: 0.5em;
-	border: none;
+	border: 2px solid;
 }
 #follow-icons {
 	font-size: 0.7em;

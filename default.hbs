@@ -31,8 +31,8 @@
 	<body class="{{body_class}}">
 		<header id="header">
 			{{#if @blog.logo}}<a id="logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
-			<h1><a class="light-gray" href="{{@blog.url}}">{{@blog.title}}</a></h1>
-			<p class="light-gray">{{@blog.description}}</p>
+			<h1><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+			<p>{{@blog.description}}</p>
 			{{> follow}}
 			{{navigation}}
 		</header>

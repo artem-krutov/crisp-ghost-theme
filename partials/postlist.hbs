@@ -5,7 +5,14 @@
 		<img src="{{image}}" max-width="50%" max-height="50%"/>
 	{{/if}}
 	<section class="post-excerpt post-padding">
-      <p>{{excerpt words="140"}}<span><a class="read-more" href="{{url}}">Читать дальше ⟶</a></span></p>
+      <p><script>makeContent({{content}})</script><span><a class="read-more" href="{{url}}">Читать дальше ⟶</a></span></p>
     </section>
 </section>
 {{/foreach}}
+
+<script type="text/javascript">
+function makeContent(content) {
+	console.log("maker");
+	return '{{content words="60"}}';
+}
+</script>

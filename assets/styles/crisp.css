@@ -23,14 +23,16 @@ header {
 	position:fixed;
 	top: 0;
 	left: 0;
-	height:90%;
+	height:100%;
 	width:13.5em;
 	overflow: auto;
+	padding-left: 12%
 }
 #content {
 	display: block;
 	width: 100%;
-	padding-right: 20%;
+	padding-right: 30%;
+	padding-left: 15%;
 	box-sizing: border-box;
 }
 footer {

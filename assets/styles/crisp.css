@@ -92,7 +92,8 @@ a {
 	color: #696969
 }
 a:hover {
-	text-decoration:underline;
+	/* text-decoration:underline; */
+	background-color: #F2EEEE
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	font-weight:400 !important;
@@ -146,7 +147,7 @@ header h1 a:hover {
 	text-decoration:none;
 }
 header #logo img {
-	height:9em;
+	/* height:9em; */
 }
 #follow-icons {
 	font-size: 0.7em;
